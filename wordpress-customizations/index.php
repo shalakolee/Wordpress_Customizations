@@ -1,11 +1,11 @@
 <?php
 /*
-  Plugin Name: 561 Custom Modifications
+  Plugin Name: WordPress Custom Modifications
   Plugin URI: http://www.561media.com
-  Description: Custom Modifications by Shalako <a href="//www.561media.com">@561 Media</a>
+  Description: Custom Modifications by <a href="//www.shalakolee.com">Shalako Lee</a>
   Version: 1.0.2
   Author: Shalako Lee
-  Author URI: https://www.561media.com/team-member/shalako-lee/
+  Author URI: https://www.shalakolee.com/
  */
 
 session_start(); // will be using this so need it here
@@ -20,15 +20,15 @@ require( $_SERVER['DOCUMENT_ROOT'] .'/wp-load.php' ); // so that we can use the 
  */
 $plugin_settings = array(
   'menu_settings'   => array(
-    'menu_title'     => '561 Custom',
-    'page_title'     => '561 Developer Customizations',
+    'menu_title'     => 'WordPress Custom',
+    'page_title'     => 'WordPress Customizations',
     'capability'     => 'manage_options',  // capability needed to see the plugin
-    'page_slug'      => 'manage-561-customizations',
+    'page_slug'      => 'manage-wordpress-customizations',
     'icon_url'       => plugins_url( 'images/icon.png', __FILE__ ), //if nothing is set it will use the default setting
     ),
-  'text_domain'     => 'fivesixone_customizations',
-  'options_prefix'  => '_561_',  //prefix for all the options that we store in the database
-  'plugin_slug'     => '561-customizations'  // used for the plugin update functions, should be the same as the folder name
+  'text_domain'     => 'wordpress_customizations',
+  'options_prefix'  => '_custom_',  //prefix for all the options that we store in the database
+  'plugin_slug'     => 'wordpress-customizations'  // used for the plugin update functions, should be the same as the folder name
 );
 
 /* ************************************************************************************************************************************ */
