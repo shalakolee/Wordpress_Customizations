@@ -1,12 +1,12 @@
 <?php
-/*
+/**
   Plugin Name: WordPress Custom Modifications
   Plugin URI: http://www.561media.com
   Description: Custom Modifications by <a href="//www.shalakolee.com">Shalako Lee</a>
   Version: 1.0.2
   Author: Shalako Lee
   Author URI: https://www.shalakolee.com/
- */
+ **/
 
 session_start(); // will be using this so need it here
 //error_reporting(E_ALL); // show debugging
